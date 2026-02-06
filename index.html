@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <section2>
+
+        <style>
+            .row2 {
+                display: flex;
+                align-items: center;
+                /* vertical alignment */
+                justify-content: flex-start;
+                width: 100%;
+                gap: 15px;
+            }
+        
+            .row2 h3 {
+                margin: 0;
+            }
+        </style>
+
+    </section2>
+    <section1>
+        <style>
+            .row1 {
+                display: flex;
+                align-items: center;
+                /* vertical alignment */
+                justify-content: flex-start;
+                width: 100%;
+                gap: 15px;
+            }
+
+            .row1 h3 {
+                margin: 0;
+            }
+        </style>
+
+
+    </section1>
+    
+</head>
+
+
+
+<body>
+
+    <section1>
+        <hr>
+        <h1>Python Tutorials</h1>
+
+        <div class="row1">
+            <h3>3.1.1 Numbers</h3>
+            <button onclick="openPage1()">Show Results</button>
+        </div>
+
+        <div class="row2">
+            <h3>3.1.2 Text </h3>
+            <button onclick="openPage2()">Show Results</button>
+        </div>
+
+                        
+        <script>
+            function openPage1() {
+                // window.location.href = "numbers.html";   // existing page name
+                window.open("numbers.html", "_blank");
+
+            }
+
+            function openPage2() {
+                    // window.location.href = "numbers.html";   // existing page name
+                    window.open("text.html", "_blank");
+
+                }
+
+
+        </script>
+
+
+    </section1>
+
+</body>
+
+</html>

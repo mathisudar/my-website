@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Highlight.js theme (Python-like look) -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+</head>
+
+<body>
+
+    <h1>3.1.2 Text </h1>
+
+    <pre><code class="language-python" style="font-size: 24px;">
+        
+        --------------------------------------------------------------------
+        print('spam eggs') # single quotes
+        
+        print("Paris rabbit got your back :)! Yay!") # double quotes
+        
+        print('1975') # digits and numerals enclosed in quotes are also strings
+        
+        '''
+        spam eggs
+        Paris rabbit got your back :)! Yay!
+        1975
+        
+        '''
+        --------------------------------------------------------------------
+        print('doesn\'t') # use \' to escape the single quote...
+        print("doesn't") # ...or use double quotes instead
+        print('"Yes," they said.')
+        print("\"Yes,\" they said.")
+        print('"Isn\'t," they said.')
+        
+        
+        '''
+        doesn't
+        doesn't
+        "Yes," they said.
+        "Yes," they said.
+        "Isn't," they said.
+        
+        '''
+        --------------------------------------------------------------------
+        s = 'First line.\nSecond line.' # \n means newline
+        s # without print(), special characters are included in the string
+        
+        print(s) # with print(), special characters are interpreted, so \n produces new line
+        
+        '''
+        First line.
+        Second line.
+        
+        '''
+        --------------------------------------------------------------------
+        print('C:\some\name') # here \n means newline!
+        print(r'C:\some\name') # note the r before the quote | Raw string
+        
+        '''
+        C:\some
+        ame
+        C:\some\name
+        
+        '''
+        --------------------------------------------------------------------
+        # 3 times 'un', followed by 'ium'
+        print(3 * 'un' + 'ium')
+        
+        '''
+        unununium
+        
+        '''
+
+        --------------------------------------------------------------------
+        print('Py' 'thon')
+        
+        '''
+        Python
+        
+        '''
+        
+
+        --------------------------------------------------------------------
+        text = ('Put several strings within parentheses '
+        'to have them joined together.')
+        print(text)
+        
+        '''
+        Put several strings within parentheses to have them joined together.
+        
+        '''
+        
+        --------------------------------------------------------------------
+        word = 'Python'
+        print(word[0]) # character in position 0
+        print(word[5]) # character in position 5
+        
+        '''
+        P
+        n
+        
+        '''
+
+        --------------------------------------------------------------------
+        print(word[-1]) # last character
+        print(word[-2]) # second-last character
+        print(word[-6])
+        
+        '''
+        n
+        o
+        P
+        
+        '''
+        
+        --------------------------------------------------------------------
+        print(word[0:2]) # characters from position 0 (included) to 2 (excluded)
+        print(word[2:5]) # characters from position 2 (included) to 5 (excluded)
+        
+        '''
+        Py
+        tho
+        
+        '''
+        
+        --------------------------------------------------------------------
+        print(word[:2]) # character from the beginning to position 2 (excluded)
+        print(word[4:]) # characters from position 4 (included) to the end
+        print(word[-2:]) # characters from the second-last (included) to the end
+        
+        '''
+        Py
+        on
+        on
+        
+        '''
+        
+        --------------------------------------------------------------------
+        print(word[:2] + word[2:])
+        print(word[:4] + word[4:])
+        
+        '''
+        Python
+        Python
+        
+        '''
+        
+        --------------------------------------------------------------------
+        print(word[4:42])
+        print(word[42:])
+        
+        '''
+        on
+        
+        '''
+        
+        --------------------------------------------------------------------
+        # Python strings cannot be changed — they are immutable. Therefore,
+        # assigning to an indexed position in the string results in an 'TypeError':
+        
+        
+        print('J' + word[1:])
+        print(word[:2] + 'py')
+        
+        '''
+        Jython
+        Pypy
+        
+        '''
+        
+        --------------------------------------------------------------------
+        s = 'supercalifragilisticexpialidocious'
+        print(len(s))
+        
+        '''
+        34
+        
+        '''
+
+
+        
+
+    </code></pre>
+    
+    <a href="indexPythonTutorial.html" style="font-size: 24px;">🏠 Home</a>
+    
+    
+    </body>
+    
+    </html>

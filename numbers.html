@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Highlight.js theme (Python-like look) -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+</head>
+
+<body>
+
+    <h1>3.1.1 Numbers</h1>
+   
+    <pre><code class="language-python" style="font-size: 24px;">
+
+    --------------------------------------------------------------------
+    print(2 + 2)
+    print(50 - 5*6)
+    print((50 - 5*6) / 4)
+    print(8 / 5) # division always returns a floating-point number
+    
+    '''
+    4
+    20
+    5.0
+    1.6
+    
+    '''
+    
+    --------------------------------------------------------------------
+    print(17 / 3)   # classic division returns a float
+    print(17 // 3)  # floor division discards the fractional part
+    print(17 % 3)   # the % operator returns the remainder
+    print(5 * 3 + 2) # floored quotient * divisor + remainder
+
+
+
+    '''
+    5.666666666666667
+    5
+    2
+    17
+    
+    '''
+
+    --------------------------------------------------------------------
+    print(5 ** 2) # 5 squared
+    print(2 ** 7) # 2 to the power of 7
+    
+    print(4 * 3.75 - 1)
+    
+    width = 20
+    height = 5 * 9
+    print(f' Width * Height: {width * height}')
+    
+    tax = 12.5 / 100
+    price = 100.50
+    value = price * tax
+    
+    netValue = price + value
+    print(f'Value: {value}')
+    print(f'Net Value: {netValue}')
+    print(f'Net value after rounding: {round(netValue, 2)}')
+    
+    '''
+    25
+    128
+    14.0
+    Width * Height: 900
+    Value: 12.5625
+    Net Value: 113.0625
+    Net value after rounding: 113.06
+    
+    '''
+
+
+    
+    </code></pre>
+
+    <a href="indexPythonTutorial.html" style="font-size: 24px;">🏠 Home</a>
+
+
+</body>
+
+</html>
