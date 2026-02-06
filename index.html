@@ -2,86 +2,122 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <title>Python Tutorials</title>
 
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/github.min.css">
 
+    <!-- Your custom CSS -->
+    <style>
 
-    <section2>
-
-        <style>
-            .row2 {
-                display: flex;
-                align-items: center;
-                /* vertical alignment */
-                justify-content: flex-start;
-                width: 100%;
-                gap: 15px;
-            }
-        
-            .row2 h3 {
-                margin: 0;
-            }
-        </style>
-
-    </section2>
-    <section1>
-        <style>
-            .row1 {
-                display: flex;
-                align-items: center;
-                /* vertical alignment */
-                justify-content: flex-start;
-                width: 100%;
-                gap: 15px;
+        button {
+                padding: 6px 14px;
+                border: none;
+                background: #2563eb;
+                color: white;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: 0.2s;
             }
 
-            .row1 h3 {
-                margin: 0;
-            }
-        </style>
+        button:hover {
+            background: #1e40af;
+        }
+
+        body {
+            padding-bottom: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafafa;
+        }
 
 
-    </section1>
-    
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #444;
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            background: #f3f4f6;
+            padding: 12px;
+        }
+
+        .footer p {
+            margin: 4px 0;
+        }
+
+        .main-section {
+            /* max-width: 700px; */
+            margin: auto;
+        }
+
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .row h3 {
+            margin: 0;
+        }
+
+
+
+    </style>
 </head>
-
 
 
 <body>
 
-    <section1>
+    <section class="main-section">
         <hr>
         <h1>Python Tutorials</h1>
 
-        <div class="row1">
+        <div class="row">
             <h3>3.1.1 Numbers</h3>
             <button onclick="openPage1()">Show Results</button>
         </div>
 
-        <div class="row2">
-            <h3>3.1.2 Text </h3>
+        <div class="row">
+            <h3>3.1.2 Text</h3>
             <button onclick="openPage2()">Show Results</button>
         </div>
+    </section>
 
-                        
-        <script>
-            function openPage1() {
-                // window.location.href = "numbers.html";   // existing page name
-                window.open("numbers.html", "_blank");
+    <script>
+        function openPage1() {
+            window.open("numbers.html", "_blank");
+        }
 
-            }
+        function openPage2() {
+            window.open("text.html", "_blank");
+        }
+    </script>
 
-            function openPage2() {
-                    // window.location.href = "numbers.html";   // existing page name
-                    window.open("text.html", "_blank");
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
 
-                }
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
 
+    <footer class="footer">
+        <hr>
+        <p><strong>Mathi Krishnan</strong></p>
+        <p>📧 mathisudar2007@gmail.com</p>
+        <p>📱 +44 742 481 1355</p>
+        <p>🔗 linkedin.com/in/mathi-krishnan-36256116</p>
+    </footer>
 
-        </script>
-
-
-    </section1>
 
 </body>
+
+
+
 
 </html>
