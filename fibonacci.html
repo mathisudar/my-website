@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Highlight.js theme (Python-like look) -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+</head>
+
+<body>
+
+    <h1>3.2 Fibonacci Program </h1>
+
+    <pre><code class="language-python" style="font-size: 24px;">
+
+
+        # Fibonacci series:
+        # the sum of two elements defines the next
+
+        a, b = 0, 1
+
+        while a < 10: 
+            print(a) 
+
+            a, b = b, a + b 
+            
+        '''
+            0
+            1
+            1
+            2
+            3
+            5
+            8
+        
+        ''' 
+            
+            
+        a, b = 0, 1 
+
+        while a < 10: 
+            print(a, end=',' ) 
+
+            a, b = b, a + b             
+            
+            
+        '''
+        0,1,1,2,3,5,8,
+        
+        '''
+        
+
+    </code></pre>
+
+    <a href="index.html" style="font-size: 24px;">🏠 Home</a>
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Highlight.js theme (Python-like look) -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+</head>
+
+<body>
+
+    <h1>4.1    if statements </h1>
+
+    <pre><code class="language-python" style="font-size: 24px;">
+
+        x = int(input("Please enter an integer: "))
+
+        if x < 0:
+            x = 0
+            print('Negative changed to zero')
+
+        elif x == 0:
+            print('Zero')
+
+        elif x == 1:
+            print('Single')
+
+        else:
+            print('More')
+
+        '''
+        Please enter an integer: -5
+        Negative changed to zero
+
+        '''    
+
+        
+
+    </code></pre>
+
+    <a href="index.html" style="font-size: 24px;">🏠 Home</a>
+
+
+</body>
+
+</html>

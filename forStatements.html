@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Highlight.js theme (Python-like look) -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+</head>
+
+<body>
+
+    <h1>4.2    for statements </h1>
+
+    <pre><code class="language-python" style="font-size: 24px;">
+
+        --------------------------------------------------------------------
+       # Measure some strings:
+
+        words = ['cat', 'window', 'defenestrate']
+
+        for word in words:
+            print(word, len(word))
+
+
+        '''
+        cat 3
+        window 6
+        defenestrate 12
+
+        '''    
+
+
+        --------------------------------------------------------------------
+        # Create a sample collection
+
+        users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+
+        # Strategy1:  Iterate over a copy
+
+        for user, status in users.copy().items():
+
+            if status == 'inactive':
+                del users[user]
+
+        print(users) # {'Hans': 'active', '景太郎': 'active'}
+
+
+        --------------------------------------------------------------------
+        # Strategy2:  Create a new collection
+
+        active_users = {}
+
+        for user, status in users.items():
+            if status == 'active':
+                active_users[user] = status
+
+        print(active_users)   # {'Hans': 'active', '景太郎': 'active'}     
+
+
+
+        
+
+    </code></pre>
+
+    <a href="index.html" style="font-size: 24px;">🏠 Home</a>
+
+
+</body>
+
+</html>
