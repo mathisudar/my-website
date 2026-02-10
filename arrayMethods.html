@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+            <style>
+                button {
+                    padding: 6px 14px;
+                    border: none;
+                    background: #2563eb;
+                    color: white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+            
+                button:hover {
+                    background: #1e40af;
+                }
+            
+            
+            
+                code {
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            
+            
+                .demo {
+                    margin-bottom: 160px;
+                    /* 👈 increase this */
+                }
+            
+            
+                .example-header {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: space-between;
+                    margin: 20px 0 16px;
+                }
+            
+                .example-header h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+            
+                .example-header button {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            
+                .hljs-tag,
+                .hljs-name {
+                    color: #fb7185;
+                    /* soft red */
+                }
+            
+                .hljs-attr {
+                    color: #fbbf24;
+                    /* onclick, src, id, style */
+                }
+            
+                .hljs-string {
+                    color: #86efac;
+                    /* "images/pic_bulbon.gif" */
+                }
+            
+                .hljs-meta {
+                    color: #94a3b8;
+                }
+            
+                pre {
+                    padding: 16px;
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    font-size: 15px;
+                    margin-top: 24px;
+                }
+            
+            
+                pre code.hljs {
+                    display: block;
+                    padding: 22px;
+                    line-height: 1.65;
+                    font-size: 14.5px;
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            </style>
+            
+            
+            <link rel="stylesheet" href="css/atom-one-dark.css">
+            <script src="js/highlight.min.js"></script>
+            <script src="js/xml.min.js"></script>
+            <script src="js/javascript.min.js"></script>
+            <script src="js/css.min.js"></script>
+            
+            <script>
+                hljs.highlightAll();
+            </script>
+
+            <script>
+                function myFunction1() {
+                    document.getElementById("demo1").innerHTML = "Paragraph changed.";
+                }
+            </script>
+    </head>
+
+    <body>
+        <h2> 8.Array Methods </h2>
+    
+        <hr>
+        <section>         
+            
+            <h1>JavaScript Arrays</h1>
+            <h2>The concat() Method</h2>
+            
+            <p>The concat() method merges (concatenates) arrays:</p>
+            
+            <p id="demo8a"></p>
+            
+            <script>
+                const array1 = ["Cecilie", "Lone"];
+                const array2 = ["Emil", "Tobias", "Linus"];
+                const array3 = ["Robin", "Morgan"];
+
+                const myChildren = array1.concat(array2, array3);
+
+                document.getElementById("demo8a").innerHTML = myChildren;
+            </script>
+
+        
+
+            <div class="example">
+            
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+            
+                <pre><code class="language-html">
+                    
+                &lt;script&gt;
+
+                const array1 = ["Cecilie", "Lone"];
+                const array2 = ["Emil", "Tobias", "Linus"];
+                const array3 = ["Robin", "Morgan"];
+                
+                const myChildren = array1.concat(array2, array3);
+                
+                document.getElementById("demo8a").innerHTML = myChildren;
+                
+                &lt;/script&gt; 
+                
+                </code></pre>
+            </div>
+            
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+
+        </section>
+        
+        <hr>
+        <section>
+        
+            <h1>JavaScript Arrays</h1>
+            <h2>The join() Method</h2>
+            
+            <p>The join() method joins array elements into a string.</p>
+            <p>It this example we have used " * " as a separator between the elements:</p>
+            
+            <p id="demo8b"></p>
+            
+            <script>
+
+                const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                document.getElementById("demo8b").innerHTML = fruits.join(" * ");
+
+            </script>
+
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">
+                            
+                        &lt;script&gt;
+        
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        document.getElementById("demo8b").innerHTML = fruits.join(" * ");
+                        
+                        &lt;/script&gt; 
+                        
+                        </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+
+      
+ 
+        
+
+        
+
+       
+
+        <hr>
+        <a href="indexJavascript.html" style="font-size: 24px;">🏠 Home</a>
+
+    </body>
+
+</html>

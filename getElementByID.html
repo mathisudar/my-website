@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        button {
+            padding: 6px 14px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+
+
+        code {
+            font-family: Consolas, Monaco, "Courier New", monospace;
+        }
+
+
+        .demo {
+            margin-bottom: 160px;
+            /* 👈 increase this */
+        }
+
+
+        .example-header {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+            margin: 20px 0 16px;
+        }
+
+        .example-header h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .example-header button {
+            padding: 4px 10px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .hljs-tag,
+        .hljs-name {
+            color: #fb7185;
+            /* soft red */
+        }
+
+        .hljs-attr {
+            color: #fbbf24;
+            /* onclick, src, id, style */
+        }
+
+        .hljs-string {
+            color: #86efac;
+            /* "images/pic_bulbon.gif" */
+        }
+
+        .hljs-meta {
+            color: #94a3b8;
+        }
+
+        pre {
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 15px;
+            margin-top: 24px;
+        }
+
+
+        pre code.hljs {
+            display: block;
+            padding: 22px;
+            line-height: 1.65;
+            font-size: 14.5px;
+            font-family: Consolas, Monaco, "Courier New", monospace;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/atom-one-dark.css">
+    <script src="js/highlight.min.js"></script>
+    <script src="js/xml.min.js"></script>
+    <script src="js/javascript.min.js"></script>
+    <script src="js/css.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Example:document.getElementById</h2>
+
+    <p id="msg">Example: document.getElementById</p>
+
+    
+
+    <div class="demo">
+        <button onclick="makeRed()">Make Red</button>
+    </div>
+
+
+
+    <a href="indexJavascript.html" style="font-size: 24px;">🏠 Home</a>
+
+
+    <div class="example">
+        <div class="example-header">
+            <h3>Example Code</h3>
+            <button onclick="copyCode()">Copy</button>
+        </div>
+
+        <pre><code class="language-html">
+
+            &lt;p id="msg"&gt; Example: document.getElementById &lt/p&gt;
+            &lt;div class="demo"&gt;
+                &lt;button onclick="makeRed()">Make Red&lt;/button&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                function makeRed() {
+                    document.getElementById("msg").style.color = "red";
+                }
+            &lt;/script&gt;
+    
+    
+        </code></pre>
+    </div>
+
+    <script>
+        function makeRed() {
+            document.getElementById("msg").style.color = "red";
+        }
+    </script>
+
+
+    <script>
+        function copyCode() {
+            navigator.clipboard.writeText(
+                document.querySelector('pre code').innerText
+            );
+        }
+    </script>
+
+
+
+</body>
+
+</html>

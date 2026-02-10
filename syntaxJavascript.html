@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+            <style>
+                button {
+                    padding: 6px 14px;
+                    border: none;
+                    background: #2563eb;
+                    color: white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+            
+                button:hover {
+                    background: #1e40af;
+                }
+            
+            
+            
+                code {
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            
+            
+                .demo {
+                    margin-bottom: 160px;
+                    /* 👈 increase this */
+                }
+            
+            
+                .example-header {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: space-between;
+                    margin: 20px 0 16px;
+                }
+            
+                .example-header h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+            
+                .example-header button {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            
+                .hljs-tag,
+                .hljs-name {
+                    color: #fb7185;
+                    /* soft red */
+                }
+            
+                .hljs-attr {
+                    color: #fbbf24;
+                    /* onclick, src, id, style */
+                }
+            
+                .hljs-string {
+                    color: #86efac;
+                    /* "images/pic_bulbon.gif" */
+                }
+            
+                .hljs-meta {
+                    color: #94a3b8;
+                }
+            
+                pre {
+                    padding: 16px;
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    font-size: 15px;
+                    margin-top: 24px;
+                }
+            
+            
+                pre code.hljs {
+                    display: block;
+                    padding: 22px;
+                    line-height: 1.65;
+                    font-size: 14.5px;
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            </style>
+            
+            
+            <link rel="stylesheet" href="css/atom-one-dark.css">
+            <script src="js/highlight.min.js"></script>
+            <script src="js/xml.min.js"></script>
+            <script src="js/javascript.min.js"></script>
+            <script src="js/css.min.js"></script>
+            
+            <script>
+                hljs.highlightAll();
+            </script>
+
+            <script>
+                function myFunction1() {
+                    document.getElementById("demo1").innerHTML = "Paragraph changed.";
+                }
+            </script>
+    </head>
+
+    <body>
+        <h2> 4.Syntax in Javascript ? </h2>
+        <hr>
+
+        <section>         
+            
+            <h1>JavaScript Statements</h1>
+            
+            <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+            
+            <p id="demo4a"></p>
+            
+            <script>
+                var x, y, z;  // Declare 3 variables
+                x = 5;    // Assign the value 5 to x
+                y = 6;    // Assign the value 6 to y
+                z = x + y;  // Assign the sum of x and y to z
+
+                document.getElementById("demo4a").innerHTML =
+                    "The value of z is " + z + ".";
+            </script>
+            
+            <div class="example">
+            
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+            
+                <pre><code class="language-html">
+                    
+                &lt;script&gt;
+                var x, y, z; // Declare 3 variables
+                x = 5; // Assign the value 5 to x
+                y = 6; // Assign the value 6 to y
+                z = x + y; // Assign the sum of x and y to z
+                
+                document.getElementById("demo4a").innerHTML =
+                "The value of z is " + z + ".";
+                &lt;/script&gt;    
+                </code></pre>
+            </div>
+            
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+
+        </section>
+        
+        
+        <hr>
+        <section>
+
+            <h1>JavaScript Numbers</h1>
+            <h3>Number can be written with or without decimals.</h3>
+            
+            <p id="demo4b"></p>
+            
+            <script>
+                document.getElementById("demo4b").innerHTML = 10.50;
+            </script>
+            
+            <div class="example">
+            
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+            
+                <pre><code class="language-html">
+                                
+                &lt;script&gt;
+                document.getElementById("demo4b").innerHTML = 10.50;
+                &lt;/script&gt;
+                </code></pre>
+
+            </div>
+            
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Strings</h1>
+            <h3>Strings can be written with double or single quotes.</h3>
+            <h2>JavaScript is Case Sensitive</h2>
+            
+            <p id="demo4c"></p>
+            
+            <script>
+                document.getElementById("demo4c").innerHTML = 'John Doe';
+            </script>
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">
+                                        
+                &lt;script&gt;
+                document.getElementById("demo4c").innerHTML = 'John Doe';
+                &lt;/script&gt;
+                    
+                                
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Variables</h1>
+            
+            <p>In this example, x is defined as a variable.
+                Then, x is assigned the value of 6:</p>
+            
+            <p id="demo4d">  </p>
+            
+            <script>
+                var myValue;
+                myValue = 6;
+
+                document.getElementById("demo4d").innerHTML = "The value of x is " + myValue;
+            </script>
+
+
+
+
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                var myValue;
+                myValue = 6;
+                
+                document.getElementById("demo4d").innerHTML = "The value of x is " + myValue;
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Operators</h1>
+            
+            <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+        
+            <p id="demo4e"> </p>
+        
+            <script>
+                document.getElementById("demo4e").innerHTML = 5 * 10;
+            </script>
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                document.getElementById("demo4e").innerHTML = 5 * 10;
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Operators</h1>
+            <h2>The Assignment (=) Operator</h2>
+            
+            <p>The = operator is used to assign values to variables.</p>
+        
+            <p id="demo4f"> </p>
+        
+            <script>
+                var x = 5;
+                var y = 6;
+                var sum = x + y;
+
+                document.getElementById("demo4f").innerHTML = "The sum is " + sum;
+            </script>
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                var x = 5;
+                var y = 6;
+                var sum = x + y;
+                
+                document.getElementById("demo4f").innerHTML = "The sum is " + sum;
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Expressions</h1>
+            <h2>Expressions Compute to Values</h2>
+            
+            <p id="demo4g"></p>
+        
+            <script>
+                document.getElementById("demo4g").innerHTML = (5 + 6) * 10;
+            </script>
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                document.getElementById("demo4g").innerHTML = (5 + 6) * 10;
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Expressions</h1>
+            <h2>Expressions Compute to Values</h2>
+            
+            <p id="demo4h"></p>
+        
+            <script>
+                document.getElementById("demo4h").innerHTML = "John" + " " + "Doe";
+            </script>
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                document.getElementById("demo4h").innerHTML = "John" + " " + "Doe";
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Expressions</h1>
+            <h2>Expressions Compute to Values</h2>
+            
+            <p id="demo4i"></p>
+        
+            <script>
+                var x;
+                x = 5;
+                document.getElementById("demo4i").innerHTML = x * 10;
+            </script>
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                var x;
+                x = 5;
+                document.getElementById("demo4i").innerHTML = x * 10;
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+        <hr>
+        <section>
+        
+            <h1>JavaScript Syntax</h1>
+            <h3>The let and const keywords create variables</h3>
+            
+            <p id="demo4j"></p>
+            
+            <script>
+                var x = 5;
+                const fname = "John";
+
+                document.getElementById("demo4j").innerHTML = fname + " is " + x + " years old.";
+            </script>
+        
+           
+        
+        
+        
+        
+        
+            <div class="example">
+        
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+        
+                <pre><code class="language-html">                                                
+                &lt;script&gt;
+                var x = 5;
+                const fname = "John";
+                
+                document.getElementById("demo4j").innerHTML = fname + " is " + x + " years old.";
+                &lt;/script&gt;                          
+                </code></pre>
+            </div>
+        
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+        
+        </section>
+
+
+        <hr>
+        <a href="indexJavascript.html" style="font-size: 24px;">🏠 Home</a>
+
+    </body>
+
+</html>

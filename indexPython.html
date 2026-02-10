@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Python Tutorials</title>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/github.min.css">
+
+    <!-- Your custom CSS -->
+    <style>
+
+        button {
+                padding: 6px 12px;
+                border: none;
+                background: #2563eb;
+                color: white;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        body {
+            padding-bottom: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafafa;
+        }
+
+
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #444;
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            background: #f3f4f6;
+            padding: 12px;
+        }
+
+        .footer p {
+            margin: 4px 0;
+        }
+
+        .main-section {
+            /* max-width: 700px; */
+            margin: auto;
+        }
+
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .row h3 {
+            margin: 5px;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <section class="main-section">
+        <hr>
+        <h1>Python Tutorials</h1>
+
+        <div class="row">
+            <h3 style="white-space: pre;">3.1.1  Numbers</h3>
+            <button onclick="openPage1()">Show Results</button>
+        </div>
+
+        <div class="row">
+            <h3 style="white-space: pre;">3.1.2  Text</h3>
+            <button onclick="openPage2()">Show Results</button>
+        </div>
+
+        <div class="row">
+            <h3 style="white-space: pre;">3.1.3  List</h3>
+            <button onclick="openPage3()">Show Results</button>
+        </div>
+
+        <div class="row">
+            <h3 style="white-space: pre;">3.2.0  Fibonacci Program</h3>
+            <button onclick="openPage4()">Show Results</button>
+        </div>
+
+        <div class="row">
+            <h3 style="white-space: pre;">4.1.0  If statement </h3>
+            <button onclick="openPage5()">Show Results</button>
+        </div>
+        <div class="row">
+            <h3 style="white-space: pre;">4.2.0  For statement </h3>
+            <button onclick="openPage6()">Show Results</button>
+        </div>
+
+    </section>
+
+    <script>
+        function openPage1() {
+            window.open("numbers.html", "_blank");
+        }
+
+        function openPage2() {
+            window.open("text.html", "_blank");
+        }
+
+
+        function openPage3() {
+                window.open("list.html", "_blank");
+            }
+
+        function openPage4() {
+                window.open("fibonacci.html", "_blank");
+            }
+        function openPage5() {
+                window.open("ifStatements.html", "_blank");
+            }    
+        function openPage6() {
+                window.open("forStatements.html", "_blank");
+            }  
+            
+            
+    </script>
+
+    <script src="js/highlight.min.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+    <footer class="footer">
+        <hr>
+        <p><strong>Mathi Krishnan</strong></p>
+        <p>📧 mathisudar2007@gmail.com</p>
+        <p>📱 +91 959 182 2230 | 📱 +44 742 481 1355</p>
+        <p>🔗 linkedin.com/in/mathi-krishnan-36256116</p>
+    </footer>
+
+
+</body>
+
+
+
+
+</html>

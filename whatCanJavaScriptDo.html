@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+            <style>
+                button {
+                    padding: 6px 14px;
+                    border: none;
+                    background: #2563eb;
+                    color: white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+            
+                button:hover {
+                    background: #1e40af;
+                }
+            
+            
+            
+                code {
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            
+            
+                .demo {
+                    margin-bottom: 160px;
+                    /* 👈 increase this */
+                }
+            
+            
+                .example-header {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: space-between;
+                    margin: 20px 0 16px;
+                }
+            
+                .example-header h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+            
+                .example-header button {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            
+                .hljs-tag,
+                .hljs-name {
+                    color: #fb7185;
+                    /* soft red */
+                }
+            
+                .hljs-attr {
+                    color: #fbbf24;
+                    /* onclick, src, id, style */
+                }
+            
+                .hljs-string {
+                    color: #86efac;
+                    /* "images/pic_bulbon.gif" */
+                }
+            
+                .hljs-meta {
+                    color: #94a3b8;
+                }
+            
+                pre {
+                    padding: 16px;
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    font-size: 15px;
+                    margin-top: 24px;
+                }
+            
+            
+                pre code.hljs {
+                    display: block;
+                    padding: 22px;
+                    line-height: 1.65;
+                    font-size: 14.5px;
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            </style>
+            
+            
+            <link rel="stylesheet" href="css/atom-one-dark.css">
+            <script src="js/highlight.min.js"></script>
+            <script src="js/xml.min.js"></script>
+            <script src="js/javascript.min.js"></script>
+            <script src="js/css.min.js"></script>
+            
+            <script>
+                hljs.highlightAll();
+            </script>
+    </head>
+
+    <body>
+        <h2> 1.What can JS Do ? </h2>
+
+        <hr>
+        <p id="demo1">
+            JS can change HTML content.
+        </p>
+
+        <button type="button" onclick="document.getElementById('demo1').
+                innerHTML = 'Hello Java Script!'">Change Content!       
+        </button>
+
+        <hr>
+        <p id="demo2">JavaScript can change the style of an HTML element.</p>
+        
+        <button type="button" onclick="document.getElementById('demo2').
+                style.fontSize='35px'">Change Style!
+        </button>
+
+        <hr>
+        <p id="demo3">JavaScript can hide HTML elements.</p>
+        
+        <button type="button" onclick="document.getElementById('demo3').
+                style.display='none'">Hide Content!
+        </button>
+
+        
+    
+    <div class="example">
+
+        <div class="example-header">
+            <h3>Example Code</h3>
+            <button onclick="copyCode()">Copy</button>
+        </div>
+
+        <pre><code class="language-html">
+        
+        &lt;button type="button" onclick="document.getElementById('demo1').
+                        innerHTML = 'Hello Java Script!'"&gt;Change Content!
+        &lt;/button&gt;
+            
+        &lt;button type="button" onclick="document.getElementById('demo2').
+                        style.fontSize='35px'"&gt;Change Style!
+        &lt;/button&gt;
+        
+        &lt;button type="button" onclick="document.getElementById('demo3').
+                        style.display='none'"&gt;Hide Content!
+        &lt;/button&gt;
+
+        </code></pre>
+    </div>
+
+    <script>
+        function copyCode() {
+            navigator.clipboard.writeText(
+                document.querySelector('pre code').innerText
+            );
+        }
+    </script>
+
+    <a href="indexJavascript.html" style="font-size: 24px;">🏠 Home</a>
+
+    </body>
+
+</html>

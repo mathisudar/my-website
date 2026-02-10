@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+            <style>
+                button {
+                    padding: 6px 14px;
+                    border: none;
+                    background: #2563eb;
+                    color: white;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+            
+                button:hover {
+                    background: #1e40af;
+                }
+            
+            
+            
+                code {
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            
+            
+                .demo {
+                    margin-bottom: 160px;
+                    /* 👈 increase this */
+                }
+            
+            
+                .example-header {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: space-between;
+                    margin: 20px 0 16px;
+                }
+            
+                .example-header h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+            
+                .example-header button {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            
+                .hljs-tag,
+                .hljs-name {
+                    color: #fb7185;
+                    /* soft red */
+                }
+            
+                .hljs-attr {
+                    color: #fbbf24;
+                    /* onclick, src, id, style */
+                }
+            
+                .hljs-string {
+                    color: #86efac;
+                    /* "images/pic_bulbon.gif" */
+                }
+            
+                .hljs-meta {
+                    color: #94a3b8;
+                }
+            
+                pre {
+                    padding: 16px;
+                    border-radius: 8px;
+                    overflow-x: auto;
+                    font-size: 15px;
+                    margin-top: 24px;
+                }
+            
+            
+                pre code.hljs {
+                    display: block;
+                    padding: 22px;
+                    line-height: 1.65;
+                    font-size: 14.5px;
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+            </style>
+            
+            
+            <link rel="stylesheet" href="css/atom-one-dark.css">
+            <script src="js/highlight.min.js"></script>
+            <script src="js/xml.min.js"></script>
+            <script src="js/javascript.min.js"></script>
+            <script src="js/css.min.js"></script>
+            
+            <script>
+                hljs.highlightAll();
+            </script>
+
+            <script>
+                function myFunction1() {
+                    document.getElementById("demo1").innerHTML = "Paragraph changed.";
+                }
+            </script>
+    </head>
+
+    <body>
+        <h2> 6.Arithmetic Operators </h2>
+    
+        <hr>
+        <section>         
+            
+            <h1>JavaScript Arithmetic</h1>
+            <h2>The + Operator</h2>
+            
+            <p id="demo6a"></p>
+            
+            <script>
+                let x6a = 5;
+                let y6a = 2;
+                let z6a = x6a + y6a;
+                document.getElementById("demo6a").innerHTML = z6a;
+            </script>
+
+            <hr>
+            <h1>JavaScript Arithmetic</h1>
+            <h2>The - Operator</h2>
+            
+            <p id="demo6b"></p>
+            
+            <script>
+                let x6b = 5;
+                let y6b = 2;
+                let z6b = x6b - y6b;
+                document.getElementById("demo6b").innerHTML = z6b;
+            </script>
+
+            <hr>
+            <h1>JavaScript Arithmetic</h1>
+            <h2>The * Operator</h2>
+            
+            <p id="demo6c"></p>
+            
+            <script>
+                let x6c = 5;
+                let y6c = 2;
+                let z6c = x6c * y6c;
+                document.getElementById("demo6c").innerHTML = z6c;
+            </script>
+
+
+            <hr>
+            <h1>JavaScript Arithmetic</h1>
+            <h2>The / Operator</h2>
+            
+            <p id="demo6d"></p>
+            
+            <script>
+                let x6d = 5;
+                let y6d = 2;
+                let z6d = x6d / y6d;
+                document.getElementById("demo6d").innerHTML = z6d;
+            </script>
+
+
+
+            <hr>
+            <h1>JavaScript Arithmetic</h1>
+            <h2>The % (reminder) Operator</h2>
+            
+            <p id="demo6e"></p>
+            
+            <script>
+                let x6e = 5;
+                let y6e = 2;
+                let z6e = x6e % y6e;
+                document.getElementById("demo6e").innerHTML = z6e;
+            </script>
+
+
+            <hr>
+            <h1>JavaScript Operators</h1>
+            
+            <p>In this example, y is incremented before it is assigned to x (pre-incremented).</p>
+            
+            <p id="demo6f1"></p>
+            <p id="demo6f2"></p>
+            
+            <script>
+                var y6f = 5;
+                var x6f = ++y6f;
+                document.getElementById("demo6f1").innerHTML = y6f;
+                document.getElementById("demo6f2").innerHTML = x6f;
+            </script>
+
+
+
+            <hr>
+            <h1>JavaScript Operators</h1>
+            
+            <p>In this example, y is decremented before it is assigned to x (pre-decremented).</p>
+            
+            <p id="demo6g1"></p>
+            <p id="demo6g2"></p>
+            
+            <script>
+                var y6g = 5;
+                var x6g = --y6g;
+                document.getElementById("demo6g1").innerHTML = y6g;
+                document.getElementById("demo6g2").innerHTML = x6g;
+            </script>
+
+
+            <div class="example">
+            
+                <div class="example-header">
+                    <h3>Example Code</h3>
+                    <button onclick="copyCode()">Copy</button>
+                </div>
+            
+                <pre><code class="language-html">
+                    
+                &lt;script&gt;
+
+                let x6a = 5;
+                let y6a = 2;
+                let z6a = x6a + y6a;
+                document.getElementById("demo6a").innerHTML = z6a;
+
+                let x6b = 5;
+                let y6b = 2;
+                let z6b = x6b - y6b;
+                document.getElementById("demo6b").innerHTML = z6b;
+
+
+                let x6c = 5;
+                let y6c = 2;
+                let z6c = x6c * y6c;
+                document.getElementById("demo6c").innerHTML = z6c;
+
+
+                let x6d = 5;
+                let y6d = 2;
+                let z6d = x6d / y6d;
+                document.getElementById("demo6d").innerHTML = z6d;
+
+                let x6e = 5;
+                let y6e = 2;
+                let z6e = x6e % y6e;
+                document.getElementById("demo6e").innerHTML = z6e;
+
+                var y6f = 5;
+                var x6f = ++y6f;
+                document.getElementById("demo6f1").innerHTML = y6f;
+                document.getElementById("demo6f2").innerHTML = x6f;
+
+
+                var y6g = 5;
+                var x6g = --y6g;
+                document.getElementById("demo6g1").innerHTML = y6g;
+                document.getElementById("demo6g2").innerHTML = x6g;
+
+
+
+                &lt;/script&gt;    
+                </code></pre>
+            </div>
+            
+            <script>
+                function copyCode() {
+                    navigator.clipboard.writeText(
+                        document.querySelector('pre code').innerText
+                    );
+                }
+            </script>
+
+        </section>
+        
+      
+
+
+      
+ 
+        
+
+        
+
+       
+
+        <hr>
+        <a href="indexJavascript.html" style="font-size: 24px;">🏠 Home</a>
+
+    </body>
+
+</html>
